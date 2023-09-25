@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Multiplication and Division</h2>
+        <label for="numInput1">1st Number : </label>&nbsp;&nbsp;
+        <input type="number" id="numInput1">
+    </div>
+    <div class="container">
+        <label for="numInput2">2nd Number : </label>&nbsp;
+        <input type="number" id="numInput2">
+    </div>
+    <div class="container">
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+        <p id="mulResult"></p>
+        <p id="divResult"></p>
+    </div>
+
+    <script>
+        function multiply() {
+            const numInput1 = parseFloat(document.getElementById("numInput1").value);
+            const numInput2 = parseFloat(document.getElementById("numInput2").value);
+            if (isNaN(numInput1) || isNaN(numInput2)) {
+                document.getElementById("mulResult").innerText = "Please enter valid numbers.";
+            }else{
+                const result1 = numInput1 * numInput2;
+                document.getElementById("mulResult").innerText = `Result of multiplication of ${numInput1} * ${numInput2} = ${result1}`;
+            }
+        }
+        function divide() {
+            const numInput1 = parseFloat(document.getElementById("numInput1").value);
+            const numInput2 = parseFloat(document.getElementById("numInput2").value);
+            if (isNaN(numInput1) || isNaN(numInput2) || (numInput2 === 0)) {
+                document.getElementById("divResult").innerText = "Please enter valid numbers.";
+            }else{
+                const result2 = numInput1 / numInput2;
+                document.getElementById("divResult").innerText = `Result of division of ${numInput1} / ${numInput2} = ${result2}`;
+            }
+        }
+    </script>
+</body>
+</html>

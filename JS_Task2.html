@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alphabetical Order</h1>
+        <label for="strInput">Enter a String: </label>
+        <input type="text" id="strInput">
+        <button onclick="alphabetOrder()">Sort</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function alphabetOrder() {
+            const strInput = document.getElementById("strInput").value;
+            const alphabetOrder = strInput.split('').sort().join('');
+            document.getElementById("result").innerText = `String sorted in alphabetical order: ${alphabetOrder}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5 bg-light w-50">
+        <form id="reg_form">
+            <h1 class="text-center text-danger">Registration Page</h1>
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input name="name" type="text" class="form-control" id="Name" >
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input name="email" type="email" class="form-control" id="email" >
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" id="password" >
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies</label>
+                <input type="number" class="form-control" id="hobbies">
+            </div>
+            <button type="submit" class="btn btn-danger btn-block">Submit</button>
+        </form>
+    </div>
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="./Task6.js"></script>
+</body>
+</html>

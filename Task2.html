@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builderz</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Customize the background color */
+        .navbar-custom {
+            background-color: #fdbe33;
+            color: black;
+        }
+
+        /* Customize the footer colors */
+        .footer-yellow {
+            background-color:#fdbe33;
+            color: black;
+        }
+
+        .footer-black {
+            background-color: black;
+            color: #fdbe33;
+        }
+        li:hover{
+            color: #fdbe33;
+        }
+        body{
+            background-color: #a8a8a5;
+        }
+        .overlay{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./builderz_img.jpg');
+        }
+    </style>
+</head>
+<body >
+    <!-- Navbar -->
+    <nav class="mx-5 navbar navbar-expand-lg navbar-dark navbar-custom">
+        <!-- <div class="container"> -->
+            <h1 class="display-1 ml-5 text-dark font-weight-bold">Builderz</h1>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <img class="nav-link" src="./builderz01.jpg" />
+                </li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+
+    <div class="navbar-custom mx-5">
+    <nav class="mx-5 navbar-expand-lg navbar-dark bg-dark">
+        <ul class=" p-3 navbar-nav">
+            <li class="nav-item">
+                <a class="text-white nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-white nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-white nav-link" href="#">SERVICE</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-white nav-link" href="#">TEAM</a>
+            </li>
+            <li class="nav-item">
+                <a class="text-white nav-link" href="#">PROJECT</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="text-white nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PAGES
+                </a>
+                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                    <a class="dropdown-item" href="#">Page 1</a>
+                    <a class="dropdown-item" href="#">Page 2</a>
+                    <a class="dropdown-item" href="#">Page 3</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="text-white nav-link" href="#">CONTACT</a>
+            </li>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white border border-white" href="#">Get a Quote</a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    </div>
+    
+
+    <header class="mx-5 overlay" style="background-size: cover; color: white; text-align: center; padding: 0; height: 100vh;">
+        <div style="padding: 100px 0;">
+            <h2>We are Professional</h2>
+            <h1 class="font-weight-bold display-3">For Your Dream Project</h1>
+            <br><br><br>
+            <ul>
+                <li>
+                    <a class="p-2 mx-3 text-white border border-white" href="#">GET A QUOTE</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="mx-5">
+        <div class="container-fluid footer-yellow">
+            <div class="row">
+                <div class="col-md-4 footer-black">
+                    <div class="container-fluid footer-black">
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-md-4 footer-black">
+                                <img src="./builderz1.jpg" />
+                            </div>
+                        <div class="col footer-black">
+                            <h3>Expert Worker</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        </div>
+                        <br><br><br>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-yellow">
+                    <div class="container-fluid footer-yellow">
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-md-4 footer-yellow">
+                                <img src="./builderz2.jpg" />
+                            </div>
+                        <div class="col footer-yellow">
+                            <h3>Quality work</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        </div>
+                        <br><br><br>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-black">
+                    <div class="container-fluid footer-black">
+                        <br><br><br>
+                        <div class="row">
+                            <div class="col-md-4 footer-black">
+                                <img src="./builderz3.jpg" />
+                            </div>
+                        <div class="col footer-black">
+                            <h3>24 / 7 Support</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        </div>
+                        <br><br><br>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="col-md-4 footer-yellow">
+                    <h3>Black Box</h3>
+                    <p>Footer content in the black box.</p>
+                </div>
+                <div class="col-md-4 footer-black">
+                    <h3>Yellow Box</h3>
+                    <p>Footer content in the yellow box.</p>
+                </div> -->
+            </div>
+        </div>
+    </footer> 
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
